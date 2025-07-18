@@ -595,69 +595,94 @@ form>button:hover {
 }
 
 .skill-bars {
-  padding: 40px 20px;
-  background: #f9f9fc;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    padding: 40px 20px;
+    background: #f9f9fc;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
 .skill-title {
-  text-align: center;
-  font-size: 2rem;
-  color: #2a2a2a;
-  font-weight: 700;
-  margin-bottom: 40px;
-  letter-spacing: 1px;
+    text-align: center;
+    font-size: 2rem;
+    color: #2a2a2a;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
 }
 
 .skill-columns {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .skill-column {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  width: 320px;
-  min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 320px;
+    min-width: 280px;
 }
 
 .bar .bar-head {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
 }
 
 .bar .label {
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
 }
 
 .bar .percent {
-  font-weight: 600;
-  font-size: 1rem;
-  color: #6b6b6b;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #6b6b6b;
 }
 
 .bar .progress {
-  background: #e4e4ec;
-  border-radius: 10px;
-  height: 16px;
-  width: 100%;
-  overflow: hidden;
+    background: #e4e4ec;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .bar .fill {
-  height: 100%;
-  background: linear-gradient(to right, #4436f5, #8f3cff);
-  border-radius: 10px;
-  transition: width 0.8s ease-in-out;
+    height: 100%;
+    background: linear-gradient(to right, #4436f5, #8f3cff);
+    border-radius: 10px;
+    transition: width 0.8s ease-in-out;
 }
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+    }
 
+    .social-icons {
+      margin: 10px 0;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #0af;
+    }
+
+    .footer-text {
+      font-size: 14px;
+      margin-top: 10px;
+    }
 
 
 /* =================== Responsive =================== */
@@ -763,6 +788,16 @@ form>button:hover {
     .skill-column {
         width: 90%;
     }
+
+    .social-icons a {
+        font-size: 20px;
+        margin: 0 8px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
@@ -773,7 +808,7 @@ form>button:hover {
     }
 
     nav>ul {
-        gap: 20px;
+        gap: 10px;
     }
 
     nav>ul>li>a {
@@ -811,7 +846,7 @@ form>button:hover {
     }
 
     nav>ul {
-        gap: 20px;
+        gap: 10px;
     }
 
     nav>ul>li>a {
@@ -838,5 +873,48 @@ form>button:hover {
     .input4>textarea {
         width: 300px;
         height: 200px;
+    }
+}
+@media (min-width: 966px) and (max-width: 1024px) {
+    header {
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    nav>ul {
+        gap: 20px;
+    }
+
+    nav>ul>li>a {
+        font-size: 1.2rem;
+    }
+
+    nav>ul>li>button {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    nav {
+        display: block !important;
+    }
+
+    .input4>textarea {
+        width: 300px;
+        height: 200px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .Project-main{
+        align-items: center;
+        flex-direction: column;
     }
 }
