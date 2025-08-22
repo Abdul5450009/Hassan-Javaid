@@ -98,7 +98,7 @@ nav>ul>li>a:hover::after {
     width: 100%;
 }
 
-nav>ul>li>button {
+nav>ul>li>a {
     padding: 12px 20px;
     border-radius: 12px;
     background: linear-gradient(to right, #4436f5, #8f3cff);
@@ -111,7 +111,7 @@ nav>ul>li>button {
     transition: all 0.4s ease;
 }
 
-nav>ul>li>button:hover {
+nav>ul>li>a:hover {
     animation: bob 1.5s ease-in-out infinite;
 }
 
@@ -815,7 +815,7 @@ form>button:hover {
         font-size: 1rem;
     }
 
-    nav>ul>li>button {
+    nav>ul>li>a {
         font-size: 1rem;
         padding: 6px 10px;
     }
@@ -924,3 +924,4 @@ form>button:hover {
         flex-direction: column;
     }
 }
+
